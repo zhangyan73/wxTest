@@ -1,0 +1,21 @@
+<!--我的询价-->
+
+<view class='piao_type'>
+  <text class='piao_type_item {{index == billTypeSelected ? "active_blue":""}}' wx:for="{{billType}}" id='{{index}}' bindtap='billType'>{{item}}</text>
+</view>
+
+<view class='list' wx:for="{{list}}">
+  <image src='../../images/bg_test.jpg'/>
+  <view>
+    <view class='title'>国股</view>
+    <view>询价时间：2018-06-01</view>
+    <view class='money'>100万</view>
+    <view>2018-9-1到期  剩余9天</view>
+  </view>
+</view>
+
+<view class='list_empty' wx:if="{{list.length == 0}}">
+  <image src='../../images/ic_list_empty.png' mode='aspectFit'/>
+</view>
+
+

@@ -1,0 +1,47 @@
+/* pages/login/login.wxss */
+.title{
+  width:100%;
+  text-align:center;
+  height:100rpx;
+  font-size:14pt;
+  color:#333333;
+}
+.input_border{
+  display: flex;
+  height:80rpx;
+  flex-direction: row;
+  margin:20rpx 30rpx;
+  border:2rpx solid #f1f1f1;
+  border-radius:10rpx;
+  line-height:80rpx;
+  font-size:12pt;
+}
+.input_border > input{
+  display: block;
+  width:70%;
+  height:80rpx;
+  line-height:80rpx;
+  margin-left: 20rpx;
+}
+.input_border > text{
+  width:30%;
+  display:block;
+  text-align:right;
+  padding-right:20rpx;
+}
+button{
+  margin: 50rpx;
+  background-color:#007CC2;
+  color:#FFFFFF;
+}
+.opacity{
+  opacity:1;
+}
+.opacity5{
+  opacity:0.5;
+}
+.tips{
+  text-align:center;
+  font-size:10pt;
+  color:#333333;
+}

@@ -1,0 +1,67 @@
+/* pages/my/my.wxss */
+.user_info{
+  display: flex;
+  width: 100%;
+  height: 360rpx;
+  flex-direction: column;
+  align-items: center;
+}
+.user_info_bg{
+  width: 100%;
+  height: 100%;
+}
+.user_info_icon{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: -150px;
+}
+.user_info_nickname{
+  color: #FFFFFF;
+  border-radius: 20px;
+  border: 2rpx #FFFFFF solid;
+  padding: 10rpx 40rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+.page_bg{
+width:100%;
+height:20rpx;
+background-color:#F1F1F1;
+
+}
+.list_bg{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0rpx 28rpx;
+  background-color: #FFFFFF;
+}
+.list_item_bg{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70rpx;
+  padding: 15rpx 0rpx;
+  color: #333333;
+  align-items:center;
+  font-size:32rpx;
+}
+.list_item_icon{
+  width:34rpx;
+  height:34rpx;
+  margin-right:20rpx;
+
+}
+.list_item_arrow{
+  position: absolute;
+  width:38rpx;
+  height:38rpx;
+  top: 30rpx;
+  right: 50rpx;
+}
+.list_item_line{
+  width: 100%;
+  height: 4rpx;
+  background-color: #F1F1F1;
+}

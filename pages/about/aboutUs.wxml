@@ -1,0 +1,29 @@
+<!--关于我们-->
+<image class='top_img' mode='widthFix' src='../../images/banner_3.png'/>
+<view class='title'>平台简介</view>
+<view class='intro'>
+  <text space='emsp'>  多数情况下，一个团队多人同时参与同一个小程序项目，每个角色所承担的工作或者权限不一样，中大公司的分工更为仔细。为了更形象的表达团队不同角色的关系以及权限的管理，我们通过虚拟一个项目成员组织结构来描述日常如何协同合作完成一个小程序的发布</text>
+  <text space='emsp'> 为了更形象的表达团队不同角色的关系以及权限的管理，我们通过虚拟一个项目成员组织结构来描述日常如何协同合作完成一个小程序的发布</text>
+</view>
+<view class='title'>联系方式</view>
+<view class='list_item'>
+  <image src='../../images/ic_net.png'/>
+  <text>官方网站</text>
+  <image src='../../images/icon_more.png'/>
+</view>
+<view class="line"/>
+<view class='list_item'>
+  <image src='../../images/ic_phone2.png'/>
+  <text>咨询电话</text>
+  <image src='../../images/icon_more.png'/>
+</view>
+<view class="line"/>
+<view class='list_item'>
+  <image src='../../images/ic_message.png'/>
+  <text>邮箱</text>
+  <image src='../../images/icon_more.png'/>
+</view>
+<view class='qrcode'>
+  <image src='../../images/ic_code.png'/>
+  <text>长按识别，关注聚盈金链</text>
+</view>

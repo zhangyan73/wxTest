@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/inquiry/inquiry",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/aboutUs",
+    "pages/login/login",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat1",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#646464",
+    "selectedColor": "#007CC2",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/inquiry/inquiry",
+        "text": "询价",
+        "iconPath": "images/ic_search_normal.png",
+        "selectedIconPath": "images/ic_search_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/ic_mine_normal.png",
+        "selectedIconPath": "images/ic_mine_select.png"
+      }
+    ]
+  }
+}

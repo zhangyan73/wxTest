@@ -1,0 +1,29 @@
+<!--pages/my/my.wxml-->
+<view class='user_info'>
+<image class='user_info_bg' mode='aspectFill' src='../../images/bg_top_header.png'></image>
+<image class='user_info_icon' src='../../images/icon_user.png'></image>
+<text class='user_info_nickname' bindtap='login'>登录/注册</text>
+</view>
+<view class='page_bg'/>
+<view class='list_bg'>
+   <view class='list_item_bg' bindtap='history'>
+     <image class='list_item_icon' src='../../images/icon_my_inquiry.png' />
+     <text>我的询价</text>
+     <image class='list_item_arrow' src='../../images/icon_more.png'/>
+   </view>
+   <view class='list_item_line'/>
+
+   <view class='list_item_bg' bindtap='toAboutUs'>
+     <image class='list_item_icon' src='../../images/icon_about_us.png' />
+     <text>关于我们</text>
+     <image class='list_item_arrow' src='../../images/icon_more.png'/>
+   </view>
+   <view class='list_item_line'/>
+
+   <view class='list_item_bg'>
+     <image class='list_item_icon' src='../../images/icon_contact_us.png' />
+     <text>联系我们</text>
+     <image class='list_item_arrow' src='../../images/icon_more.png'/>
+   </view>
+   <view class='list_item_line'/>
+</view>

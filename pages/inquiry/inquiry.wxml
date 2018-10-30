@@ -1,0 +1,90 @@
+<!--我要询价-->
+<swiper indicator-dots = "{{indicatorDots}}" autoplay = "{{autoplay}}" interval = "{{interval}}" duration="{{duration}}" indicator-active-color="{{indicator_active_color}}" >
+  <block wx:for="{{imgUrls}}">
+      <swiper-item>
+          <image class='top_banner' src='{{item}}'/>
+      </swiper-item>
+  </block>
+</swiper>
+<view class='top_banner_line'/>
+<view class='title_view'>
+  <image class='ic_title_bg' src='../../images/ic_title_bg.png'/>
+  <text class='ic_title'>询价</text>
+</view>
+<view class='separate_line'/>
+<view class='piao_type'>
+  <text class='piao_type_item {{index == billTypeSelected ? "active_blue":""}}' wx:for="{{billType}}" id='{{index}}' bindtap='billType'>{{item}}</text>
+</view>
+<view class='piao_jiezhi_view'>
+  <image src='../../images/ic_mark.png'/>
+  <text class='piao_ju_left'>票据介质</text>
+  <text class='piao_jiezhi_item {{index == billMediaSelected ? "active_org":""}}' wx:for="{{billMedia}}" id='{{index}}' bindtap='selectMedia'>{{item}}</text>
+</view>
+<view class='piao_jiezhi_view' style='height:160rpx;line-height:160rpx;margin-bottom:20rpx;'>
+  <image src='../../images/ic_mark.png'/>
+  <text class='piao_ju_left'>承兑行</text>
+  <view class='bill_banks'>
+    <text class='piao_jiezhi_item {{index == billBankSelected ? "active_org":""}}' wx:for="{{billBank}}" id='{{index}}' bindtap='billBank'>{{item}}</text>
+  </view>
+</view>
+<view class='separate_line'/>
+<view class='piao_jiezhi_view'>
+  <image src='../../images/ic_mark.png'/>
+  <text class='piao_ju_left'>票据金额</text>
+  <input placeholder="请输入票面金额" type='digit' bindinput='bindMoneyInput'/>
+  <text class='piao_ju_left'>万元</text>
+</view>
+<view class='separate_line'/>
+<view class='piao_jiezhi_view'>
+  <image src='../../images/ic_mark.png'/>
+  <text class='piao_ju_left'>票据到期日</text>
+  <picker mode="date" start="2016-01-01" end="2020-12-12" value='{{dueDate}}' bindchange='bindDateChange'>
+    <view class='piao_ju_left hint_color'>{{dueDate}}</view>
+  </picker>
+</view>
+<view class='separate_line'/>
+<view class='piao_jiezhi_view piao_add_pic_line'>
+  <image src='../../images/ic_mark.png'/>
+  <text class='piao_ju_left'>上传票面照片</text>
+  <view class='picture_view'>
+    <view class='piao_add_pic' bindtap='addPic' wx:if="{{picPath == ''}}">+</view>
+    <view class='show_pic' wx:if="{{picPath != ''}}">
+      <image src='{{picPath}}'/>
+      <image bindtap='deletePic' src='../../images/ic_delete.png'/>
+    </view>
+  </view>
+  
+</view>
+<button class='btn_inquiry' bindtap='inquiry'>立即询价</button>
+<view class='inquiry_bottom_view'>
+  <view>专业融资顾问随时待命，为您提供高效对接服务</view>
+  <image src='../../images/ic_phone.png'/>
+  <text>400-12345678</text>
+</view>
+<view class='top_banner_line '/>
+<view class='title_view'>
+  <image class='ic_title_bg' src='../../images/ic_title_bg.png'/>
+  <text class='ic_title'>合作企业</text>
+</view>
+<view class='separate_line'/>
+<image class='img_partner' mode='widthFix' src='../../images/bg_partner.png'/>
+<view class='top_banner_line '/>
+<view class='title_view'>
+  <image class='ic_title_bg' src='../../images/ic_title_bg.png'/>
+  <text class='ic_title'>平台优势</text>
+</view>
+<view class='separate_line'/>
+<view class='bottom_view'>
+<view>
+  <image src='../../images/ic_way.png'/>
+  <text>丰富的资金渠道</text>
+</view>
+<view>
+  <image src='../../images/ic_engy.png'/>
+  <text>智能匹配引擎</text>
+</view>
+<view>
+  <image src='../../images/ic_team.png'/>
+  <text>专业服务团队</text>
+</view>
+</view>
